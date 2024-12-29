@@ -1,0 +1,9 @@
+name: Trigger Dependabot
+on:
+  workflow_dispatch:
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Dependabot
+        uses: ahmadnassri/action-dependabot-auto-merge@v2.6.0
